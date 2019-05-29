@@ -19,9 +19,8 @@
             margin: 10px 0;
         }
         .right {
-            display: absolute;
-            right: 5%;
-            display: inline;
+            text-align: right;
+            margin: 15px 0;
         }
         .mainImg {
             width: 100%;
@@ -35,9 +34,36 @@
             line-height: 25px;
             font-size: 1.4em;
         }
+        .brand {
+            width:40%;
+        }
         .center {
             text-align: center;
             font-size: 1.4em;
+        }
+
+        @media screen and (max-width: 480px) {
+            .mainImg {
+                display: none;
+            }
+            .right {
+                text-align: center;
+            }
+            .square {
+                text-align: justify;
+                line-height: 25px;
+                font-size: 1em;
+            }
+            .brand {
+                width:100%;
+            }
+            .center {
+                text-align: center;
+                font-size: 1em;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -49,7 +75,7 @@
             </div>
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <div style="text-align: right; margin: 15px 0;">
+                <div class="right">
                     <a href="https://www.facebook.com/potomacsocial" target="_blank"><img class="social" src="facebook.png"></a>
                     <a href="https://www.linkedin.com/company/potomacsocial" target="_blank"><img  class="social" src="linkedin.png"></a>
                     <!-- <a href="https://twitter.com/potomac_social" target="_blank"><img  class="social" src="twitter.png"></a> -->
@@ -78,7 +104,7 @@
         <br>
         <div class="row">
             <div class="col-md-12">
-                <a href="https://potomacsocial.com/" target="_blank"><img src="PotomacSocial.png"></a>
+                <a href="https://potomacsocial.com/" target="_blank"><img class="brand" src="PotomacSocial.png"></a>
             </div>
         </div>
         <br><br>
